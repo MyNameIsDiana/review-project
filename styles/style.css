@@ -6,24 +6,28 @@
      }
    
    body {
-     background-color: #64A6BD;
+     background-image: url("old_password_game_show.jpg");
+     
+     background-size: cover;
      justify-content: center;
      align-items: center;
      display: flex;
      min-height: 100vh;
        }
 .box {
-    background-color: #efefef;
+    background-color: transparent;
     padding-left: 60px;
     padding: 60px;
+    
+    margin-top: 450px;
 }
 
 .box h2 {
     margin-bottom: 40px;
-   text-align: center;
-   font-size: 26px;
-   color: #c2095a;
-   font-family: sans-serif;
+    text-align: center;
+    font-size: 26px;
+    color: #c2095a;
+    font-family: sans-serif;
 }
 input {
     padding: 20px;
@@ -59,3 +63,4 @@ input {
      color: #f5ff90;
      background-color: #136f63;
  }
+ 
