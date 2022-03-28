@@ -6,20 +6,20 @@ const charArray = charString.split('');
 
 // create a global variable called "pwLength" with a number between 10 and 18
 function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min +1) + min);
 }
 
 // Using the above array and password length variable, create a random password using a for loop inside of a function called "addNewPassword" either saved as an arrow function variable or a traditional function
 const addNewPassword = () => {
     //console.log('password length is     ' + pwLength);
-    //Adds 1 to max because Math.floor; without adding 1 it will never choose 18
-    const pwLength = getRandomNumber(10, 19);  
+    const pwLength = getRandomNumber(10, 18);  
     const result = [];
     for (let i = 0; i < pwLength; i ++) {
         result.push(charArray[getRandomNumber(0, charArray.length + 1)]);
     }
     return result.join('');
 }
+
 
 // ========= ⬇ DO NOT TOUCH THIS CODE ⬇ ======
 
